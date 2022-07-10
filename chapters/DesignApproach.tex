@@ -1,0 +1,90 @@
+\section{Designing a New Traffic Simulator:  Architecture}
+
+    \frame{\sectionpage}
+    
+    \begin{frame}{Desired Network Structure}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6.5cm]{Images/Network_general.png}
+            \caption{Example generalized graph network}
+        \end{figure}
+    \end{frame}
+    
+    
+    \begin{frame}{Desired Network Structure: Highlights}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6.5cm]{Images/network_marked_up.png}
+            \caption{Different edge patterns have been highlighted}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}{Desired Network Structure: Data Structures}
+        \begin{figure}
+            \centering
+            \begin{figure}[ht]
+                \begin{minipage}[b]{0.45\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth, height=4cm]{Images/adj_matrix.png}
+                    \caption{Adjacency matrices cannot isolate individual edges}
+                    \label{fig:a}
+                \end{minipage}
+                \hspace{0.5cm}
+                \begin{minipage}[b]{0.45\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth, height=1cm]{Images/code_dict.png}
+                    \includegraphics[width=\textwidth, height=4cm]{Images/human readable.PNG}
+                    \caption{Dictionary output:  internal (top), human readable (bottom)}
+                    \label{fig:b}
+                \end{minipage}
+            \end{figure}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}{Network Software Components}
+        \begin{figure}
+            \centering
+            \includegraphics[height=5.25cm]{Images/traffic_network_module.png}
+            \caption{Network software module and class components}
+        \end{figure}
+    \end{frame}
+
+%%%%%%%%%%%%%%%%
+
+    \begin{frame}{Desired Traffic Structure:  Cars}
+        \begin{figure}
+            \centering
+            \begin{figure}[ht]
+                \begin{minipage}[b]{0.55\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth, height=5cm]{Images/Network_general_cars.png}
+            \caption{Cars (purple squares) moving along the network}
+                    \label{fig:a}
+                \end{minipage}
+                \hspace{0.5cm}
+                \begin{minipage}[b]{0.25\linewidth}
+                    \centering
+                    \includegraphics[width=\textwidth, height=1.5cm]{Images/car_module.png}
+                    \caption{Car software module and class component}
+                    \label{fig:b}
+                \end{minipage}
+            \end{figure}
+        \end{figure}
+    \end{frame}
+    
+    
+    \begin{frame}{Complete Software Architecture}
+        \begin{figure}
+            \centering
+            \includegraphics[height=6.5cm]{Images/detailed_essentials.png}
+            \caption{Module Interaction}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}{Full Software Ecosystem}
+        \begin{figure}
+            \centering
+            \includegraphics[height=4.75cm]{Images/complete_architecture.png}
+            \caption{Module Interaction, including user and generators}
+        \end{figure}
+    \end{frame}

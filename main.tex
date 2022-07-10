@@ -1,0 +1,48 @@
+\documentclass[aspectratio=43]{beamer}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\input{chapters/preamble}
+\title{Network Traffic Simulator} %->->->->-> Check hyperref title <-<-<-<-<-
+\subtitle{Designing an Extensible Traffic Management System Using Python}
+\author[J. Ruiter]{Julia Ruiter}
+\institute[Thesis Defense]{
+    Universiteit Utrecht%
+    \\%
+    MSc Applied Data Science
+    \\ %
+    Department of Natural Sciences%
+} %You can change the Institution if you are from somewhere else
+\date{11 July 2022}
+%\logo{\includegraphics[width= 0.2\textwidth]{images/a-logo.png}}
+
+\begin{document}
+    
+    \frame{\titlepage}
+    
+    \begin{frame}{Summary}
+        % \textcolor{white}
+        \tableofcontents
+    \end{frame}
+    
+    \input{chapters/Background}
+    \input{chapters/DesignApproach}
+    \input{chapters/Movement}
+    \input{chapters/NextSteps}
+
+
+    
+    \section*{References}%You can remove this if you do not want to use it
+        \nocite{SUMO2022}
+        \nocite{absingh}
+        \nocite{LWB18}
+        \begin{frame}[allowframebreaks]{References}
+            \printbibliography
+        \end{frame}
+
+    \section*{Thank you for listening!}
+    \begin{frame}{}
+        \centering
+            \Huge\bfseries
+        \textcolor{orange}{Questions?}
+    \end{frame}
+\end{document}
